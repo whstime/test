@@ -12,13 +12,6 @@ def toggleBorders(event):
   isBorderToggled = False
   for x in document.getElementsByClassName("command"):
    x.style.border = "none"
-#  for x in document.getElementsByClassName("command"):
-#   if borders == False:
-#     x.style.border = "1px solid white"
-#     borders = True
-#   else:
-#     x.style.border = "none"
-#     borders = False
 tb = create_proxy(toggleBorders)
 toggleButton.addEventListener("click",tb)
 isBorderToggled = False

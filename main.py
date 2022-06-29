@@ -14,4 +14,3 @@ def toggleBorders(event):
    x.style.border = "none"
 tb = create_proxy(toggleBorders)
 toggleButton.addEventListener("click",tb)
-isBorderToggled = False

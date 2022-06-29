@@ -1,8 +1,8 @@
 from pyodide import create_proxy
 console.log("starting")
-isBorderToggled = False
 toggleButton = document.getElementById('toggle')
 def toggleBorders(event):
+ global isBorderToggled
  console.log("toggled")
  if isBorderToggled == False: 
   isBorderToggled = True
@@ -14,3 +14,4 @@ def toggleBorders(event):
    x.style.border = "none"
 tb = create_proxy(toggleBorders)
 toggleButton.addEventListener("click",tb)
+isBorderToggled = False
